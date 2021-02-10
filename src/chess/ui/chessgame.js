@@ -245,8 +245,7 @@ const ChessGameWrapper = (props) => {
 
     // get the gameId from the URL here and pass it to the chessGame component as a prop. 
     // const domainName = 'http://chesswithfriend.com'
-    // const domainName = 'https://60238c099a58484672e74fd6--cocky-shaw-036f99.netlify.app'
-    // const domainName = 'http://localhost:3003'
+    const domainName = 'https://linhken-chess.netlify.app/'
     const color = React.useContext(ColorContext)
     const { gameid } = useParams()
     const [play] = useSound(chessMove);
@@ -345,7 +344,7 @@ const ChessGameWrapper = (props) => {
                   console.log('sd')
                   event.target.select()
               }}
-              value = {'http://localhost:3003' + "/game/" + gameid}
+              value = {domainName + "/game/" + gameid}
               type = "text">
               </textarea>
             <br></br>
